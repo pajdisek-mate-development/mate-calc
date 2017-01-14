@@ -1,19 +1,28 @@
 #!/usr/bin/make -f
 
+DHFLAGS=--parallel
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+DPKG_EXPORT_BUILDFLAGS = 1
+include /usr/share/dpkg/buildflags.mk
+
 %:
-	dh $@
+	dh $@ $(DHFLAGS)
 
 override_dh_install:
-	dh_install --list-missing
+	dh_install --fail-missing
+
+override_dh_installchangelogs:
+	dh_installchangelogs NEWS
 
 override_dh_auto_configure:
-	dh_auto_configure -- \
+	NOCONFIGURE=1 ./autogen.sh
+	dh_auto_configure $(DHFLAGS) -- \
 		--disable-static \
-		--disable-scrollkeeper \
-		--with-gtk=2.0
+		--disable-silent-rules
 
 override_dh_strip:
-	dh_strip --dbg-package=mate-calc-dbg
+	dh_strip --dbgsym-migration='mate-calc-dbg (<< 1.8.0-1~)'
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..

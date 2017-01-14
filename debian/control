@@ -1,27 +1,29 @@
 Source: mate-calc
 Section: math
 Priority: optional
-Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
-Uploaders: Steve Zesch <stevezesch2@gmail.com>
+Maintainer: MATE Packaging Team <mate-dev@ml.mate-desktop.org>
+Uploaders: Mike Gabriel <sunweaver@debian.org>,
+           John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
+           Stefano Karapetsas <stefano@karapetsas.com>,
+           Vangelis Mouhtsis <vangelis@gnugr.org>,
 Build-Depends: debhelper (>= 9),
+               dpkg-dev (>= 1.16.1.1),
                libatk1.0-dev,
                libglib2.0-dev,
-               libgtk2.0-dev,
-               intltool,
+               libgtk-3-dev,
                libxml2-dev,
-               flex,
-               bison,
+               mate-common (>= 1.17),
                yelp-tools,
-               mate-common
-Standards-Version: 3.9.5
+Standards-Version: 3.9.8
 Homepage: http://www.mate-desktop.org/
+Vcs-Browser: https://anonscm.debian.org/git/pkg-mate/mate-calc.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-mate/mate-calc.git
 
 Package: mate-calc
 Architecture: any
-Depends: ${shlibs:Depends},
+Depends: mate-calc-common (= ${source:Version}),
          ${misc:Depends},
-         mate-calc-common (= ${source:Version}),
-Recommends: mate-icon-theme
+         ${shlibs:Depends},
 Description: MATE desktop calculator
  mate-calc is a powerful graphical calculator with financial, logical and
  scientific modes. It uses a multiple precision package to do its arithmetic
@@ -29,23 +31,11 @@ Description: MATE desktop calculator
 
 Package: mate-calc-common
 Architecture: all
-Depends: ${misc:Depends}
-Replaces: mate-calc (<< 1.7.0)
+Depends: ${misc:Depends},
+Replaces: mate-calc (<< 1.7.0),
 Description: MATE desktop calculator (common files)
  mate-calc is a powerful graphical calculator with financial, logical and
  scientific modes. It uses a multiple precision package to do its arithmetic
  to give a high degree of accuracy.
  .
  This package contains the architecture independent files.
-
-Package: mate-calc-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Depends: ${misc:Depends},
-         mate-calc (= ${binary:Version}),
-Description: MATE desktop calculator (debugging symbols)
- This package contains debugging symbols for mate-calc. It is provided
- to help debugging problems.
- The debugging symbols are installed in /usr/lib/debug and will
- automatically be used by gdb.

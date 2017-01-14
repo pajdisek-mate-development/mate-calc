@@ -1,3 +1,7 @@
-usr/share/locale/
-usr/share/mate-calc/
+usr/share/appdata/
+usr/share/applications/
+usr/share/glib-2.0/
 usr/share/help/
+usr/share/locale/
+usr/share/man/
+usr/share/mate-calc/
