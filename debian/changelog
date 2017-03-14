@@ -1,3 +1,9 @@
+mate-calc (1.18.0-0ubuntu1) zesty; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Mon, 13 Mar 2017 18:12:41 +0000
+
 mate-calc (1.17.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
