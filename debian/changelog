@@ -1,3 +1,11 @@
+mate-calc (1.18.1-2) unstable; urgency=medium
+
+  * debian/watch:
+    + Ignore upstream development releases.
+    + Use secure URL to obtain upstream sources.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 25 Nov 2017 18:10:03 +0100
+
 mate-calc (1.18.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
