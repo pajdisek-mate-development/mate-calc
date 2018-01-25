@@ -1,3 +1,9 @@
+mate-calc (1.19.0-0ubuntu1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 24 Jan 2018 06:46:13 +0000
+
 mate-calc (1.18.1-2) unstable; urgency=medium
 
   * debian/watch:
