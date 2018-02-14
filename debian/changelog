@@ -1,3 +1,23 @@
+mate-calc (1.20.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/copyright (already in 1.19.0-0ubuntu1):
+    + Update copyright attributions.
+
+  [ Vangelis Mouhtsis ]
+  * debian/control (already in 1.19.0-0ubuntu1):
+    + Temporarily have pkg-mate-team ML under Uploaders:.
+    + Update Maintainer: field to debian-mate ML on lists.debian.org.
+    + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
+    + Bump Standards-Version: to 4.1.3. No changes needed.
+
+  [ Mike Gabriel ]
+  * debian/{control,compat}: Bump DH version level to 11.
+  * debian/{rules,mate-calc-common.install}:
+    + Move appstream metainfo to correct location.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 14 Feb 2018 15:48:26 +0100
+
 mate-calc (1.20.0-0ubuntu1) bionic; urgency=medium
 
   * New upstream release.
