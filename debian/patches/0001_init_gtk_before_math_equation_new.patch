@@ -1,0 +1,25 @@
+Author: Victor A. Santos <victoraur.santos@gmail.com>
+Description: Initialise GTK before math_equation_new to prevent a slew of warnings when running from the terminal.
+
+diff --git a/src/mate-calc.c b/src/mate-calc.c
+index 891bc7e..b31d2f1 100644
+--- a/src/mate-calc.c
++++ b/src/mate-calc.c
+@@ -197,6 +197,8 @@ int main(int argc, char **argv)
+     /* Seed random number generator. */
+     srand48((long) time((time_t *) 0));
+ 
++    gtk_init(&argc, &argv);
++
+     g_settings_var = g_settings_new ("org.mate.calc");
+     accuracy = g_settings_get_int(g_settings_var, "accuracy");
+     word_size = g_settings_get_int(g_settings_var, "word-size");
+@@ -229,8 +231,6 @@ int main(int argc, char **argv)
+ 
+     get_options(argc, argv);
+ 
+-    gtk_init(&argc, &argv);
+-
+     //gtk_window_set_default_icon_name("accessories-calculator");
+ 
+     window = math_window_new(equation);
