@@ -1,3 +1,16 @@
+mate-calc (1.20.0-2) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/copyright: Use secure URI for copyright format.
+
+  [ Martin Wimpress ]
+  * debian/patches:
+    + Add 0001_init_gtk_before_math_equation_new.patch. Initialise GTK before
+      math_equation_new to prevent a slew of warnings when running from the
+      terminal.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 07 Mar 2018 14:53:38 +0100
+
 mate-calc (1.20.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
