@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: MATE Calc
 Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
-Source: http://git.mate-desktop.org/mate-calc/
+Source: https://git.mate-desktop.org/mate-calc/
 
 Files: data/*.ui
 Copyright: 2008-2011 Robert Ancell <robert.ancell@gmail.com>
