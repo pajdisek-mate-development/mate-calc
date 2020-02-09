@@ -13,7 +13,7 @@ Build-Depends: debhelper-compat (=12),
                libxml2-dev,
                mate-common (>= 1.18),
                yelp-tools,
-Standards-Version: 4.4.1
+Standards-Version: 4.5.0
 Rules-Requires-Root: no
 Homepage: http://www.mate-desktop.org/
 Vcs-Browser: https://salsa.debian.org/debian-mate-team/mate-calc
