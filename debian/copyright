@@ -3,10 +3,6 @@ Upstream-Name: MATE Calc
 Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
 Source: https://git.mate-desktop.org/mate-calc/
 
-Files: data/*.ui
-Copyright: 2008-2011 Robert Ancell <robert.ancell@gmail.com>
-License: GPL-2+
-
 Files: src/*
 Copyright: 1987-2008 Sun Microsystems, Inc.
            2008-2011 Robert Ancell <robert.ancell@gmail.com>
@@ -64,6 +60,7 @@ Files: help/C/*
        help/hu/hu.po
        help/hy/hy.po
        help/id/id.po
+       help/ie/ie.po
        help/ig/ig.po
        help/is/is.po
        help/it/it.po
@@ -386,12 +383,14 @@ Copyright: Adam Weinberger <adamw@gnome.org>, 2004, 2005, 2006.
 License: GPL-2+
 
 Files: .github/issue_template.md
+       .github/FUNDING.yml
        .travis.yml
        .tx/config
        data/*.in
        data/Makefile.am
        data/mate-calc-cmd.1
        data/mate-calc.1
+       data/org.mate.calc.gschema.xml
        help/Makefile.am
        makepot
        po/LINGUAS
@@ -399,7 +398,6 @@ Files: .github/issue_template.md
        po/gnome-copyrights.txt
        src/Makefile.am
        AUTHORS
-       COPYING
        ChangeLog
        Makefile.am
        NEWS
