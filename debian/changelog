@@ -1,4 +1,4 @@
-mate-calc (1.24.0-1) UNRELEASED; urgency=medium
+mate-calc (1.24.0-1) unstable; urgency=medium
 
   [ Mike Gabriel ]
   * debian/control:
@@ -10,8 +10,17 @@ mate-calc (1.24.0-1) UNRELEASED; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
+  * debian/patches:
+    + Drop 1001_add-keywords-field-to-desktop-file.patch. Applied upstream.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/control:
+    + Add B-D libxml2-utils.
+    + Update Build-Depends: to support MATE Desktop 1.24.
+  * debian/mate-calc-common.install:
+    + Remove obsolete reference to usr/share/mate-calc/.
 
- -- Martin Wimpress <martin.wimpress@ubuntu.com>  Thu, 13 Feb 2020 09:41:28 +0000
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 14 Feb 2020 15:58:00 +0100
 
 mate-calc (1.22.2-1) unstable; urgency=medium
 
