@@ -382,7 +382,8 @@ Copyright: Adam Weinberger <adamw@gnome.org>, 2004, 2005, 2006.
            甘露(Gan Lu) <rhythm.gan@gmail.com>, 2009.
 License: GPL-2+
 
-Files: .github/issue_template.md
+Files: .build.yml
+       .github/issue_template.md
        .github/FUNDING.yml
        .travis.yml
        .tx/config
@@ -404,6 +405,7 @@ Files: .github/issue_template.md
        README.md
        autogen.sh
        configure.ac
+       update-authors.pl
 Copyright: *No copyright*
 License: GPL-2+
 Comment:
