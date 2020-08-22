@@ -1,7 +1,7 @@
 Source: mate-calc
 Section: math
 Priority: optional
-Maintainer: Debian+Ubuntu Debian MATE Packaging Team <debian-mate@lists.debian.org>
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
 Uploaders: Mike Gabriel <sunweaver@debian.org>,
            Martin Wimpress <code@flexion.org>,
            Vangelis Mouhtsis <vangelis@gnugr.org>,
