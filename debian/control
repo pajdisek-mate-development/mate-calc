@@ -13,6 +13,7 @@ Build-Depends: debhelper-compat (= 13),
                libmpfr-dev,
                libxml2-dev,
                libxml2-utils,
+               libdlib-dev,
                mate-common (>= 1.24.0-1~),
                yelp-tools,
 Standards-Version: 4.5.0
